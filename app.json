@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my_information/my_information",
+    "pages/custom_analysis/custom_analysis",
+    "pages/analysis_results_show/analysis_results_show",
+    "pages/custom_analysis_operations1/custom_analysis_operations1",
+    "pages/custom_analysis_operations2/custom_analysis_operations2",
+    "pages/custom_analysis_operations3/custom_analysis_operations3",
+    "pages/movies/movies",
+    "pages/people/people",
+    "pages/air_quality/air_quality",
+    "pages/model_results_show/model_results_show"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/custom_analysis/custom_analysis",
+        "text": "自定义分析",
+        "iconPath": "images/添加.png",
+        "selectedIconPath": "images/添加_填充.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/首页.png",
+        "selectedIconPath": "images/首页_填充.png"
+      },
+      {
+        "pagePath": "pages/my_information/my_information",
+        "text": "我的",
+        "iconPath": "images/用户.png",
+        "selectedIconPath": "images/用户_填充.png"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "#00f"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "数据可视化分析",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
