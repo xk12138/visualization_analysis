@@ -98,4 +98,36 @@ font-family: "Microsoft YaHei";
   font-size: 60rpx;
   font-weight: bold;
 }
+.content {
+  /* 首行缩进8% */
+  text-indent: 8%;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20rpx;
+  /*关键属性（必须有的）  */
+  display: -webkit-box;
+  /*规定子元素的排列方向 */
+  -webkit-box-orient: vertical;
+  /* 当溢出是隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ 
+.hide {
+  -webkit-line-clamp: 2;
+  /* 透明度,半透明 */
+  opacity: 0.75;
+}
+ 
+.show {
+  -webkit-line-clamp: 0;
+  opacity: 1;
+}
+ 
+.state {
+  color: black;
+  float: right;
+  font-size: 20rpx;
+  margin-right: 30rpx;
+}
 
