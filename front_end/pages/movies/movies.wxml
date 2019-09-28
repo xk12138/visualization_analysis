@@ -27,7 +27,10 @@
             <text class='director'>导演：{{item.director}}</text>
           </view>
           <view class='people'>
-            <text class='main_actor'>主演：{{item.main_actor}}</text>
+            <view class="content {{isFolded?'hide':'show'}}">
+            <text>主演：{{item.main_actor}}</text>
+            </view>
+           <view bindtap="foldChange" class="state">{{isFolded?'展开':'收起'}}</view>
           </view>
           <view class='people'>
             <text class='time'>上映时间：{{item.time}}</text>
