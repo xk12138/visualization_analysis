@@ -1,0 +1,35 @@
+<!--pages/Model Results Show/Model Results Show.wxml-->
+<view class='maincontainer'>
+  <image src="{{detail.cover}}" class="img"></image>
+
+
+  <view class="bg first">
+    <text>{{detail.title}}</text>
+  </view>
+  <view class="tuwen">
+    <view class="logo">
+      <view class="second">
+        <text>类型：{{detail.type}}</text>
+      </view>
+      <!--<view class="second">
+        <text>制片地区：中国大陆</text>
+      </view>-->
+      <view class="second">
+        <text>主演：{{detail.main_actor}}</text>
+      </view>
+
+    </view>
+    <image src="/images/胶卷.jpg" class="peitu"></image>
+  </view>
+  
+  <!--<view class="second">
+    <text>剧情简介：草庙村被屠，少年张小凡双亲离世，被青云门大竹峰收留。机缘巧合之下，他习得佛门天音功法，又意外获得魔教法器烧火棍，踏上强者之路的同时，也让他陷入了巨大的危机。至魔法器的现世，与陆雪琪、碧瑶、田灵儿三个女生间命运的交错，都让他原本单纯的人生轨迹充满变数。一个勇者驳斥命运的传奇之旅就此展开......</text>
+  </view>
+  -->
+  <view class="pailie">
+    <image src="http://127.0.0.1:8000/wordcloud/{{id}}.png" class="fenxi1"></image>
+    <view class="fenxi2">
+      <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ec}}" bind:init="echartInit"></ec-canvas>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,59 @@
+/* pages/Model results show/Model results show.wxss */
+.maincontainer{
+font-family: "Microsoft YaHei";
+}
+.bg{
+  text-align: center;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  width: 400rpx;
+}
+.first{
+  font-size: 48rpx;
+  font-weight: bold;
+}
+.second{
+  padding-top: 20rpx;
+  font-size: 28rpx;
+}
+.hr{
+  background: rgb(255, 255, 255);
+  height: 30px;
+}
+.img{
+  align-items: center;
+  justify-content: center;
+  width: 790rpx;
+  height: 650rpx;
+}
+.tuwen{
+  display: flex;
+  flex-direction: row;
+}
+.peitu{
+  width: 250rpx;
+  height: 180rpx;
+  padding-left: 100rpx;
+}
+.pailie{
+  
+  display: flex;
+  flex-direction: column;
+}
+.fenxi1{
+  width: 790rpx;
+  height: 500rpx;
+  padding-top: 30rpx;
+}
+.fenxi2{
+  width: 790rpx;
+  height: 500rpx;
+}
+
+ec-canvas{
+  width: 100%;
+  height: 100%;
+}

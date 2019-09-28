@@ -1,0 +1,45 @@
+/* pages/analysis results show/analysis results show.wxss */
+.maincontainer{
+font-family: "Microsoft YaHei";
+}
+.bg{
+  width:  100%;
+  height: 100px;
+  text-align: center;
+}
+.logo{
+  padding-top: 20px;
+  color: #000000;
+}
+.first{
+  font-size: 24px;
+  font-weight: bold;
+}
+.second{
+  font-size: 14px;
+}
+.hr{
+  background: rgb(255, 255, 255);
+  height: 30px;
+}
+.tubiao{
+  width: 790rpx;
+  height: 500rpx;
+}
+.img2{
+  width: 765rpx;
+  height: 400rpx;
+  margin-top: 30rpx;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.page_bd{
+  display: flex;
+  flex-direction: row;
+}
+.section{
+  padding-left: 60rpx;
+}

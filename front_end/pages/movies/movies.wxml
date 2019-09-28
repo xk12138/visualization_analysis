@@ -1,0 +1,55 @@
+<!--pages/Movies/Movies.wxml-->
+<view class='maincontainer'>
+  <view class='bg'>
+    <view class='logo'>
+      <view class='first'>
+       <text>电影评分排行榜</text>
+      </view>
+      <view>
+        <text>（点击查看分析结果）</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='hotmovie' wx:for='{{movie}}' wx:key='{{item.id}}'>
+    <view class='movie' bindtap="goToModelResultsShow" id='{{item.id}}'>
+
+      <view class='moviepic'>
+        <image src='{{item.cover}}' mode='aspectFit' style='width:80px;height:100px;'></image>
+      </view>
+
+      <view class='movieinformation'>
+        <view class='baseinformation'>
+          <view class='title'>
+            <text>{{item.title}}</text>
+          </view>
+          <view class='people'>
+            <text class='director'>导演：{{item.director}}</text>
+          </view>
+          <view class='people'>
+            <text class='main_actor'>主演：{{item.main_actor}}</text>
+          </view>
+          <view class='people'>
+            <text class='time'>上映时间：{{item.time}}</text>
+          </view>
+          <view class='people'>
+            <text class='type'>类型：{{item.type}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='rate'>
+        <view class='text'>
+          <view class='tag'>
+            <text style="color:black;">评分：</text>
+          </view>
+          <view class='value'>
+            <text style="color:red;">{{item.rate}}</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='hr'></view>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/Model Results Show/Model Results Show.wxml-->
+<view class='maincontainer'>
+  <view class='bg'>
+    <view class='logo'>
+      <view class='first'>
+       <text>空气质量报告</text>
+      </view>
+      <view>
+        <text>（下面显示的是该城市空气质量指标走势图）</text>
+      </view>
+    </view>
+  </view>
+  <view class="page_bd">
+    <view class="section">
+      <picker bindchange="bindChange" mode="date" value="{{date}}" start="2010-01-01" end="2015-12-31">
+        <view class="picker">日期：{{date}}</view>
+      </picker>
+    </view>  
+  </view>
+
+  <view class="tubiao">
+    <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+  </view>
+  <image src="http://photocdn.sohu.com/20121217/Img360617692.jpg" class="img2"></image>
+</view>

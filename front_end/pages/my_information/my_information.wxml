@@ -1,0 +1,53 @@
+<!--pages/My Information/My Information.wxml-->
+<view class='maincontainer'>
+  <view class='bg'>
+    <view class='logo'>
+      <view class='first'>
+        <text>个人信息</text>
+        <view class="userinfo">
+          <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称  </button>
+          <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='hothistory' wx:for='{{history}}'>
+    <view class='history' bindtap="goToModelResultsShow" data-history-id='{{item.id}}'>
+      <view class='historyinformation'>
+        <view class='baseinformation'>
+          <view class='title'>
+            <text>{{item.title}}</text>
+          </view>
+          <view class='people'>
+            <text class='director'>导演：{{item.director}}</text>
+          </view>
+          <view class='people'>
+            <text class='main_actor'>主演：{{item.main_actor}}</text>
+          </view>
+          <view class='people'>
+            <text class='time'>上映时间：{{item.time}}</text>
+          </view>
+          <view class='people'>
+            <text class='type'>类型：{{item.type}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='rate'>
+        <view class='text'>
+          <view class='tag'>
+            <text style="color:black;">评分：</text>
+          </view>
+          <view class='value'>
+            <text style="color:red;">{{item.rate}}</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

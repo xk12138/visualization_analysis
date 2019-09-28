@@ -1,0 +1,47 @@
+<!--pages/Custom Analysis Operations3/Custom Analysis Operations3.wxml-->
+<view class='maincontainer'>
+  <view class='bg'>
+    <view class='logo'>
+      <view class='first'>
+       <text>数据导入</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="content">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="section">
+        <view class="section_title">想选择的图表类型</view>
+        <checkbox-group name="chart">
+          <view class="option">
+            <label><checkbox value="zhu"/>柱状图</label>
+            <image src="/images/1.png" class="img"></image>
+            <label><checkbox value="xian"/>线形图</label>
+            <image src="/images/7.png" class="img"></image>
+            
+          </view>
+          
+          <view class="option">
+            <label><checkbox value="bing"/>饼图</label>
+            <image src="/images/9.png" class="img"></image>
+            <label><checkbox value="lei" class="leida"/>雷达图</label>
+            <image src="/images/5.png" class="img"></image>
+          </view>
+
+          <view class="option">
+            <label><checkbox value="san"/>散点图</label>
+            <image src="/images/4.png" class="img"></image>
+            <label><checkbox value="qi"/>气泡图</label>
+            <image src="/images/6.png" class="img"></image>
+          </view>
+        </checkbox-group>
+      </view>
+
+
+      <view class="btn-area">
+        <button form-type="submit" type="primary" bindtap="goToAnalysisResultsShow" hover-class='nav-hover' class="sub">提交</button>
+        <button form-type="reset" class="sub">重置</button>
+      </view>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!--pages/Air Quality/Air Quality.wxml-->
+<view class='maincontainer'>
+  <view class='bg'>
+    <view class='logo'>
+      <view class='first'>
+       <text>空气质量分析</text>
+      </view>
+      <view>
+        <text>（点击查看分析结果）</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="cs">
+    <text class="zi" bindtap="get_data" id='Beijing'>北京</text>
+    <image src="/images/北京1.jpg" class="img"></image>
+  </view>
+  <view class="cs">
+    <text class="zi" bindtap="get_data" id='Shanghai'>上海</text>
+    <image src="/images/上海1.jpeg" class="img"></image>
+  </view>
+  <view class="cs">
+    <text class="zi" bindtap="get_data" id='Guangzhou'>广州</text>
+    <image src="/images/广州1.jpg" class="img"></image>
+  </view>
+  <view class="cs">
+    <text class="zi" bindtap="get_data" id='Shenyang'>沈阳</text>
+    <image src="/images/沈阳1.jpg" class="img"></image>
+  </view>
+  <view class="cs">
+    <text class="zi" bindtap="get_data" id='Chengdu'>成都</text>
+    <image src="/images/成都1.jpg" class="img"></image>
+  </view>
+
+</view>
