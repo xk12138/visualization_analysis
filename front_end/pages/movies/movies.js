@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isFolded: true,
     movie: [],
     index: 0,
   },
@@ -49,5 +50,11 @@ Page({
 
   onReachBottom: function() {
     this.loadMovie();
+  },
+  
+  foldChange: function (e) {
+    this.setData({
+      isFolded: !this.data.isFolded,
+    })
   }
 })
