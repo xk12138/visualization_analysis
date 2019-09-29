@@ -12,7 +12,7 @@
   </view>
 
   <view class='hotmovie' wx:for='{{movie}}' wx:key='{{item.id}}'>
-    <view class='movie' id='{{item.id}}'>
+    <view class='movie' bindtap="goToModelResultsShow" id='{{item.id}}'>
 
       <view class='moviepic'>
         <image src='{{item.cover}}' mode='aspectFit' style='width:80px;height:100px;'></image>
@@ -20,7 +20,7 @@
 
       <view class='movieinformation'>
         <view class='baseinformation'>
-          <view class='title' bindtap="goToModelResultsShow">
+          <view class='title'>
             <text>{{item.title}}</text>
           </view>
           <view class='people'>
