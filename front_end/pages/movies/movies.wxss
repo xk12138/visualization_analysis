@@ -99,9 +99,6 @@ font-family: "Microsoft YaHei";
   font-weight: bold;
 }
 .content {
-  /* 首行缩进8% */
-  text-indent: 8%;
-  width: 90%;
   margin: 0 auto;
   font-size: 20rpx;
   /*关键属性（必须有的）  */
