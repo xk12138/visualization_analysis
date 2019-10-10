@@ -3,6 +3,7 @@ from django.http import HttpResponse
 import pymysql
 from datetime import datetime
 import json
+import logging
 
 db_host = 'localhost'
 db_user = 'root'
@@ -12,6 +13,9 @@ db_database = 'innovation'
 # Create your views here.
 def test(request):
     return HttpResponse('Hello world.')
+    logger = logging.getLogger(__name__)
+    logger.info("loggers")
+
 
 def get_movies(request):
     if request.method == 'GET':
@@ -53,6 +57,8 @@ def get_movies(request):
             except Exception as e:
                 print("Error: " + str(e))
     return HttpResponse('服务器发生错误！')
+    logger = logging.getLogger(__name__)
+    logger.info("loggers")
 
 
 def get_detail(request):
@@ -87,3 +93,6 @@ def get_detail(request):
             except Exception as e:
                 print("Error: " + str(e))
     return HttpResponse('服务器发生错误！')
+    logger = logging.getLogger(__name__)
+    logger.info("loggers")
+

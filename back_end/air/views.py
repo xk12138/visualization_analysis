@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import pymysql
 import json
-
+import logging
 
 db_host = 'localhost'
 db_user = 'root'
@@ -48,3 +48,6 @@ def get_quality(request):
                 print("Error: " + str(e))
 
     return HttpResponse("服务器发生错误！")
+    logger = logging.getLogger(__name__)
+    logger.info("loggers")
+
